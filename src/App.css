@@ -1,0 +1,173 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #c2e2ff;
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eef0f5;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 8px;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: calc(100% - 100px);
+  max-width: 300px;
+}
+
+input[type="date"] {
+  padding: 8px;
+  font-size: 18px;
+  background: transparent;
+  border: 1px solid #7aa7ef;
+  border-radius: 20px;
+  width: 150px;
+}
+
+select:focus {
+  outline: none;
+  border-color: #6697e0;
+  background-color: #fff;
+}
+
+.addbtn {
+  color: #fff;
+  cursor: pointer;
+  border-radius: 90px;
+  border: none;
+  outline: none;
+  padding: 16px;
+  background: #7aa7ef;
+  font-family: "Times New Roman", Times, serif;
+  width: 100px; /* Fixed width for the button */
+}
+
+ul li {
+  list-style: none;
+  font-size: 18px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  text-transform: capitalize;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  top: 12px;
+  left: 8px;
+}
+
+.btndlt {
+  position: absolute;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 20%;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: #7aa7ef;
+  cursor: pointer;
+}
+
+p {
+  padding: 20px;
+  color: black;
+}
+
+.filter-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.download-btn {
+  padding: 10px 20px;
+  background: #7aa7ef;
+  color: white;
+  border-radius: 30px;
+  font-family: "Times New Roman", Times, serif;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #6697e0;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .todo-app {
+    margin: 50px auto 20px;
+    padding: 30px 20px 50px;
+  }
+  .row {
+    padding-left: 10px;
+  }
+  .addbtn {
+    padding: 12px;
+    width: 80px;
+  }
+  input {
+    width: calc(100% - 80px);
+  }
+  select {
+    width: 100%;
+  }
+  ul li {
+    font-size: 16px;
+    padding: 10px 8px 10px 40px;
+  }
+  ul li::before {
+    height: 22px;
+    width: 22px;
+  }
+}
