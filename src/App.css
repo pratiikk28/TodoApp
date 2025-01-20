@@ -70,7 +70,7 @@ select:focus {
   padding: 16px;
   background: #7aa7ef;
   font-family: "Times New Roman", Times, serif;
-  width: 100px; /* Fixed width for the button */
+  width: 100px; 
 }
 
 ul li {

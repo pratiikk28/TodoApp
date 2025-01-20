@@ -66,7 +66,6 @@ function App() {
     doc.save("tasks.pdf");
   };
 
-  // Count completed and incomplete tasks
   const completedTasksCount = tasks.filter((task) => task.completed).length;
   const incompleteTasksCount = tasks.filter((task) => !task.completed).length;
 
